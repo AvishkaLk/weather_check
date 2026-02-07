@@ -4,6 +4,17 @@
     margin: 0%;
 }
 
+#preloader {
+  background: #000 url(loader.gif) no-repeat center center;
+  background-size: 40%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
 body{
     width: 1351px;
     height: 768px;
@@ -206,5 +217,6 @@ body{
         background-position: center;
         background-repeat: no-repeat;
     }
+
 
 }
