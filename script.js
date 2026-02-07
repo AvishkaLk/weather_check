@@ -1,3 +1,14 @@
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+
+  preloader.style.transition = "opacity 0.6s ease";
+  preloader.style.opacity = "0";
+
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 600);
+});
+
 const panel = document.getElementById("sidePanel");
 const btnCity = document.getElementById("btnCity");
 
@@ -45,3 +56,4 @@ async function getWeather(city) {
 panel.addEventListener("click", () => {
     panel.style.width = "0";
 });
+
